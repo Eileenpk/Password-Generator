@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Karla:wght@800&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+<body>
+   <main>
+    <section class="top">
+        <h1>Generate a <span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+        <form>
+            <label for="pwl">
+                Password Length
+                <input name="pwl" id="pwl" type="number" placeholder="0">
+            </label>
+          </form>
+        <button onclick="generatePassword()"> <img src="/images/Icon.png" alt="">
+            Generate passwords</button>
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="bottom">
+        <p id="generate-el-1"><img src="/images/Icon (1).png" alt=""></p>
+        <p id="generate-el-2"><img src="/images/Icon (1).png" alt=""></p>
+        <p id="generate-el-3" class="bottom-btn"><img src="/images/Icon (1).png" alt=""></p>
+        <p id="generate-el-4" class="bottom-btn"><img src="/images/Icon (1).png" alt=""></p>
+
+    </section>
+    
+   </main>
+</body>
+<script src="index.js"> </script>
+</html>

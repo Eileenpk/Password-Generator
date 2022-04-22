@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    --font: 'Inter', sans-serif;
+    --h1-font: 'Karla', sans-serif;
+    --main-color: #ECFDF5;
+    --second-color: #10B981;
+    --third-color: #273549;
+    --font-color: #6B7280;
+
+
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--third-color);
+}
+main {
+    height: 550px;
+    width: 550px;
+    background: var(--main-color);
+}
+
+section {
+    margin-left: 52px;
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    color: var(--third-color);
+    font-size: 40px;
+    margin-top: 110px;
+    line-height: 40px;  
+}
+
+h1 span {
+    display: block;
+    color: var(--second-color);
+}
+
+p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: var(--font-color);
+}
+
+form {
+    margin-top: 15px;
+    color: var(--font-color);
+}
+
+form input {
+    color: var(--font-color);
+    width: 50px;
+}
+
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: var(--second-color);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border: 2px solid var(--second-color);
+    padding: 9px 17px 9px 15px;
+    margin-top: 30px;
+    border-radius: 6px;
+    font-family: var(--font);
+}
+
+button:hover {
+    border: 2px solid var(--third-color);
+    color: var(--third-color);
+}
+
+button img {
+    padding-right: 15px;
+    height: 18px;
+    width: auto;
+}
+
+.bottom {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.hr {
+    margin-left: 52px;
+    width: 446px;
+    margin-top: 35px;
+    content: "";
+    border: 1px solid #D5D4D8; 
+}
+
+.bottom p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--third-color);
+    color: var(--second-color);
+    height: 39px;
+    width: 211px;
+    min-width: fit-content;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-right: 24px;
+}
+
+.bottom-btn {
+    margin-bottom: 54px;
+}
+
+@media only screen and (max-width: 600px) {
+    main {    
+        width: 100%;
+        height: fit-content;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-items: center;
+        align-content: center;
+    }
+
+    h1 {
+        width: 70vw;
+    }
+   
+    .top p {
+        width: 70vw;
+    }
+
+    button {
+        width: 211px;
+    }
+
+    .hr {
+        width: 70vw;
+    }
+}
